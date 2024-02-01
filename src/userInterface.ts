@@ -12,11 +12,12 @@
  * 輸出: 'John Doe'
  */
 
-interface userProfile {
+export interface userInfo {
     firstName: string,
     lastName: string
 }
-export function getFullName(user: userProfile): string {
+
+export function getFullName(user: userInfo): string {
     // 在此實現函式
     return `${user.firstName} ${user.lastName}`;
 }

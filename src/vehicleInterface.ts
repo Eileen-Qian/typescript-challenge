@@ -12,13 +12,14 @@
  * 輸出: 'Toyota Corolla (2020)'
  */
 
-interface vehicleDetail {
+export interface vehicleInfo {
     brand: string,
     model: string,
     year: number
 }
 
-export function vehicleInfo(vehicle: vehicleDetail): string {
+export function vehicleInfo(vehicle: vehicleInfo): string {
     // 在此實現函式
+    return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
     return `${vehicle.brand} ${vehicle.model} (${vehicle.year})`;
 }

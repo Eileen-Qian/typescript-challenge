@@ -15,4 +15,5 @@ export enum TrafficLight {
 export function getTrafficLightStatus(light: TrafficLight): string {
   // 在此實現函式
   return `The traffic light is ${light}`;
+  return `The traffic light is ${light}`;
 }

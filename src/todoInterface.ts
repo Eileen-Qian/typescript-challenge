@@ -13,17 +13,11 @@
  * 輸出: [{ id: 1, task: 'Buy milk', completed: false }, { id: 2, task: 'Walk the dog', completed: false }]
  */
 
-interface TodosType {
-    id: number,
-    task: string,
-    completed: boolean,
-}
-
-export function addTodo(todos: TodosType[], task: string): TodosType[] {
+export function addTodo(todos: Todo[], task: string): Todo[] {
     // 在此實現函式
-    const theLast = todos.length - 1;
-    const theLastTodoId = todos[theLast].id;
-    let newTodo: TodosType = {
+    const theLastTodo = todos.length - 1;
+    const theLastTodoId = todos[theLastTodo].id;
+    let newTodo: Todo = {
         id: theLastTodoId + 1,
         task: task,
         completed: false

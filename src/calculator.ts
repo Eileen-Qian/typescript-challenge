@@ -6,6 +6,7 @@
 export function add(a: number, b: number): number {
     // 在此實現函式
     return a + b;
+    return a + b;
 }
 
 /**
@@ -15,6 +16,7 @@ export function add(a: number, b: number): number {
  */
 export function subtract(a: number, b: number): number {
     // 在此實現函式
+    return a - b;
     return a - b;
 }
 
@@ -26,6 +28,7 @@ export function subtract(a: number, b: number): number {
 export function multiply(a: number, b: number): number {
     // 在此實現函式
     return a * b;
+    return a * b;
 }
 
 /**
@@ -35,10 +38,10 @@ export function multiply(a: number, b: number): number {
  */
 export function divide(a: number, b: number): number | string {
     // 在此實現函式
-    if (b == 0){
-        throw new Error("Cannot divide by zero");
+    if ( b === 0) {
+        throw new Error('Cannot divide by zero');
     } else {
-        return a / b;
+        return a / b
     }
 }
 
